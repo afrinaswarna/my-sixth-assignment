@@ -20,6 +20,13 @@
       * {
         font-family: "Inter", sans-serif;
       }
+      .active{
+        background-color: #15803D;
+        color: white;
+       border-radius: 4px;
+       padding: 8px ;
+        
+      }
     </style>
   </head>
   <body>
@@ -63,7 +70,19 @@
       </div>
     </section>
     <main>
-      <section></section>
+      <section  class="bg-[#F0FDF4]  py-20">
+        <h2 class="text-center text-4xl font-bold mb-5">Choose Your Trees</h2>
+       <div class="flex justify-between w-11/12 mx-auto gap-4">
+         <div id="Categories-container" class=" w-1/7">
+            <h4 class="font-semibold text-xl mb-4">Categories</h4>
+         </div>
+         <div id="category-card-container" class="w-5/7 grid grid-cols-3 gap-3">
+           
+
+         </div>
+         <div class="bg-white rounded-lg h-[300px] w-1/7"></div>
+       </div>
+      </section>
       <section class="bg-[#F0FDF4] py-10">
         <h2 class="text-center text-4xl font-bold mb-5">About the Campaign</h2>
         <div
@@ -132,5 +151,6 @@
         <p class="text-white text-center">© 2025 Green Earth. All Rights Reserved.</p>
 
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>
