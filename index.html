@@ -20,12 +20,11 @@
       * {
         font-family: "Inter", sans-serif;
       }
-      .active{
-        background-color: #15803D;
+      .active {
+        background-color: #15803d;
         color: white;
-       border-radius: 4px;
-       padding: 8px ;
-        
+        border-radius: 4px;
+        padding: 8px;
       }
     </style>
   </head>
@@ -70,19 +69,47 @@
       </div>
     </section>
     <main>
-      <section  class="bg-[#F0FDF4]  py-20">
+      <section
+        id="spinner-container"
+        class="flex justify-center items-center bg-[#F0FDF4] py-24 hidden"
+      >
+        <span class="loading loading-spinner loading-xl"></span>
+      </section>
+      <section id="card-category-section" class="bg-[#F0FDF4] py-20">
         <h2 class="text-center text-4xl font-bold mb-5">Choose Your Trees</h2>
-       <div class="flex justify-between w-11/12 mx-auto gap-4">
-         <div id="Categories-container" class=" w-1/7">
+        <div class="flex justify-between w-11/12 mx-auto gap-4">
+          <div id="Categories-container" class="w-1/7">
             <h4 class="font-semibold text-xl mb-4">Categories</h4>
-         </div>
-         <div id="category-card-container" class="w-5/7 grid grid-cols-3 gap-3">
-           
+          </div>
+          <div
+            id="category-card-container"
+            class="w-5/7 grid grid-cols-3 gap-3"
+          ></div>
+          <div
+            id="add-to-cart-container"
+            class="bg-white rounded-lg h-[300px] w-1/7">
+            <div>
+              
+            </div>
+        </div>
+        </div>
+      </section>
+      <!-- Open the modal using ID.showModal() method -->
+      <!-- <button class="btn" onclick="">open modal</button> -->
+      <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+         <div id="modal-container">
+          
 
          </div>
-         <div class="bg-white rounded-lg h-[300px] w-1/7"></div>
-       </div>
-      </section>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
       <section class="bg-[#F0FDF4] py-10">
         <h2 class="text-center text-4xl font-bold mb-5">About the Campaign</h2>
         <div
@@ -130,27 +157,41 @@
         </div>
       </section>
       <section class="bg-[#166534] py-24 px-10">
-        <h2 class="text-center font-bold text-2xl text-white mb-10">Plant a Tree Today</h2>
-        <form class="bg-[#15803d] w-full md:w-[650px] mx-auto p-10 rounded-lg shadow-md">
-          <input type="text" placeholder="Your Name" class="input w-full " />
-          <br>
-          <input type="text" placeholder="Your Email Address" class="input w-full mt-3" />
-          <br>
+        <h2 class="text-center font-bold text-2xl text-white mb-10">
+          Plant a Tree Today
+        </h2>
+        <form
+          class="bg-[#15803d] w-full md:w-[650px] mx-auto p-10 rounded-lg shadow-md"
+        >
+          <input type="text" placeholder="Your Name" class="input w-full" />
+          <br />
+          <input
+            type="text"
+            placeholder="Your Email Address"
+            class="input w-full mt-3"
+          />
+          <br />
           <select class="select w-full my-3">
             <option disabled selected>Number of Trees</option>
             <option>Crimson</option>
             <option>Amber</option>
             <option>Velvet</option>
           </select>
-          <br>
-          <button class="btn btn-active btn-warning bg-[#FACC15] text-[#15803D] w-full">Donate Now</button>
+          <br />
+          <button
+            class="btn btn-active btn-warning bg-[#FACC15] text-[#15803D] w-full"
+          >
+            Donate Now
+          </button>
         </form>
       </section>
     </main>
     <footer class="bg-[#14532D] py-8">
-        <p class="text-white text-center">© 2025 Green Earth. All Rights Reserved.</p>
-
+      <p class="text-white text-center">
+        © 2025 Green Earth. All Rights Reserved.
+      </p>
     </footer>
+
     <script src="./index.js"></script>
   </body>
 </html>
