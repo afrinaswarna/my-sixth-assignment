@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
       * {
         font-family: "Inter", sans-serif;
@@ -77,20 +78,27 @@
       </section>
       <section id="card-category-section" class="bg-[#F0FDF4] py-20">
         <h2 class="text-center text-4xl font-bold mb-5">Choose Your Trees</h2>
-        <div class="flex justify-between w-11/12 mx-auto gap-4">
-          <div id="Categories-container" class="w-1/7">
-            <h4 class="font-semibold text-xl mb-4">Categories</h4>
+        <div class="flex flex-col md:flex-row justify-between w-11/12 mx-auto gap-4">
+          <div  class="w-full md:w-1/7">
+            <h4 class="font-semibold text-xl mb-4 text-center md:text-left">Categories</h4>
+            <div id="Categories-container" class="flex flex-wrap gap-5 p-4"></div>
           </div>
           <div
             id="category-card-container"
-            class="w-5/7 grid grid-cols-3 gap-3"
+            class="w-full md:w-5/7 grid grid-cols-1 md:grid-cols-3 gap-3"
           ></div>
           <div
-            id="add-to-cart-container"
-            class="bg-white rounded-lg h-[300px] w-1/7">
-            <div>
+            
+            class="bg-white rounded-lg  w-full md:w-1/7 shadow-md">
+            <h2 class="font-semibold text-xl m-2">Your Cart</h2>
+          
+           <div id="add-to-cart-container">
+            
+           </div>
+           <div class="text-right border-t border-gray-200 p-2 m-2">
               
-            </div>
+              <p class="font-semibold text-sm">Total:ট<span id="totalPrice">0</span></p>
+          </div>
         </div>
         </div>
       </section>
