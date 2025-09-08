@@ -47,7 +47,7 @@
     </header>
     <section class="bg-[#CFF0DC]">
       <!-- <div class="bg-[url(./assets/hero-leaf1.png)] bg-position-[-20] bg-no-repeat bg-contain "> -->
-      <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="flex flex-col md:flex-row justify-between items-center p-5 md:p-0">
         <div>
           <img class="bg-contain" src="./assets/hero-leaf1.png" alt="" />
         </div>
@@ -65,7 +65,7 @@
         </div>
 
         <div class="">
-          <img class="bg-contain" src="./assets/hero-leaf2.png" alt="" />
+          <img class="bg-contain hidden md:block" src="./assets/hero-leaf2.png" alt="" />
         </div>
       </div>
     </section>
@@ -124,7 +124,7 @@
           class="flex flex-col md:flex-row w-full md:w-2/3 mx-auto gap-6 items-center p-5"
         >
           <div class="w-full md:w-1/2">
-            <img src="./assets/about.png" alt="" />
+            <img class="shadow-md" src="./assets/about.png" alt="" />
           </div>
           <div class="w-full md:w-1/2">
             <p>
@@ -145,19 +145,19 @@
         <h2 class="text-center text-4xl font-bold mb-8">Our Impact</h2>
         <div class="flex flex-col md:flex-row gap-8">
           <div
-            class="bg-white w-full md:w-[510px] h-[156px] rounded-lg shadow p-10 text-center"
+            class="bg-white w-full md:w-[510px] h-[140px] rounded-lg shadow-md p-10 text-center"
           >
             <h2 class="text-2xl font-semibold text-[#15803D] mb-3">500K+</h2>
             <p class="">Trees Planted</p>
           </div>
           <div
-            class="bg-white w-full md:w-[510px] h-[156px] rounded-lg shadow p-10 text-center"
+            class="bg-white w-full md:w-[510px] h-[140px] rounded-lg shadow-md p-10 text-center"
           >
             <h2 class="text-2xl font-semibold text-[#15803D] mb-3">120+</h2>
             <p class="">Communities Involved</p>
           </div>
           <div
-            class="bg-white w-full md:w-[510px] h-[156px] rounded-lg shadow p-10 text-center"
+            class="bg-white w-full md:w-[510px] h-[140px] rounded-lg shadow-md p-10 text-center"
           >
             <h2 class="text-2xl font-semibold text-[#15803D] mb-3">30+</h2>
             <p class="">Countries Reached</p>
@@ -181,9 +181,9 @@
           <br />
           <select class="select w-full my-3">
             <option disabled selected>Number of Trees</option>
-            <option>Crimson</option>
-            <option>Amber</option>
-            <option>Velvet</option>
+            <option>1 Tree - $5</option>
+            <option>5 Trees - $25</option>
+            <option>10 Trees - $50</option>
           </select>
           <br />
           <button
