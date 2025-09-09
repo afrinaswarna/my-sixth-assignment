@@ -18,7 +18,7 @@ const manageSpinner = (status) => {
 
 
 
-const loadAllPlants = (id) => {
+const loadAllPlants = () => {
   manageSpinner(true);
   fetch("https://openapi.programming-hero.com/api/plants")
     .then((res) => res.json())
@@ -144,9 +144,9 @@ const showAddToCart = (addToCart) => {
   addToCart.forEach((cart) => {
     const addCartDiv = document.createElement("div");
     addCartDiv.innerHTML = `
-<div class="bg-[#F0FDF4] p-2 m-2 rounded-lg flex justify-between items-center shadow-md">
-<div><h2 class="font-semibold text-sm">${cart.title}</h2>
-<p class="text-xs">ট<span class="text-sm">${cart.price}</span></p></div>
+<div class="bg-[#F0FDF4] p-4 md:p-2 m-2 rounded-lg flex justify-between items-center shadow-md">
+<div><h2 class="font-semibold text-lg md:text-sm ">${cart.title}</h2>
+<p class="text-xs">ট<span class="text-lg md:text-sm">${cart.price}</span></p></div>
 <div id="deleteBtn" onclick="handleDeleteCart('${cart.id}')"><i class="fa-solid fa-xmark"></i></div>
 </div>
  
